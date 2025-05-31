@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesorías de Matemáticas Online | Miguel Caballero</title>
+    <meta name="description" content="Asesorías de matemáticas online personalizadas con Miguel Caballero (MateXperto). Aprende con el método que te lleva al siguiente nivel. Clase de prueba gratis.">
+    <meta name="keywords" content="matemáticas online, asesoría matemática, clases particulares, MateXperto, Miguel Caballero, secundaria, exámenes, admisión, Perú">
+    <link rel="icon" href="https://matexperto.com/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif; }
+        .nav-link.active { font-weight: 600; color: #2563eb; border-bottom: 2px solid #2563eb; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; }
+        .hero-bg { background-color: #eff6ff; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+    <img src="logo.jpeg" alt="Logo MateXperto" class="h-10 w-10 object-contain">
+    <span class="text-2xl font-bold text-blue-700">MateXperto</span>
+</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#sobre-mi" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Sobre Mí</a>
+                <a href="#metodologia" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Metodología</a>
+                <a href="#servicios" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Servicios</a>
+                <a href="#faq" class="nav-link text-gray-600 hover:text-blue-600 transition-colors">Preguntas</a>
+                <a href="#contacto" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition-shadow shadow-lg hover:shadow-xl">Contactar</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#sobre-mi" class="block py-2 px-6 text-gray-600 hover:bg-blue-50">Sobre Mí</a>
+            <a href="#metodologia" class="block py-2 px-6 text-gray-600 hover:bg-blue-50">Metodología</a>
+            <a href="#servicios" class="block py-2 px-6 text-gray-600 hover:bg-blue-50">Servicios</a>
+            <a href="#faq" class="block py-2 px-6 text-gray-600 hover:bg-blue-50">Preguntas</a>
+            <a href="#contacto" class="block py-4 px-6 text-center bg-blue-600 text-white font-bold hover:bg-blue-700">Contactar</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero-bg pt-20 pb-24 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-blue-800 leading-tight mb-4">Desbloquea tu Potencial en Matemáticas con MateXperto</h1>
+                <span class="block text-blue-600 font-semibold mb-3 text-xl">Tu Profesor Experto en Matemáticas Online</span>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">Asesorías online personalizadas que transforman la confusión en claridad. Aprende a tu ritmo, resuelve tus dudas y conquista cualquier examen. <br><span class="font-semibold text-blue-800">¡Sin miedo, sin estrés, solo resultados!</span></p>
+                <a href="#contacto" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-shadow shadow-xl hover:shadow-2xl transform hover:scale-105">Agenda una Clase de Prueba Gratis</a>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="py-20">
+            <div class="container mx-auto px-6 grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2">
+                    <img src="https://matexperto.com/img/miguel-caballero.jpg" alt="Miguel Caballero - MateXperto" class="rounded-xl shadow-lg w-full aspect-square object-cover">
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl font-bold text-blue-700 mb-2">¡Hola! Soy Miguel Caballero</h2>
+                    <span class="block text-blue-600 font-semibold mb-2">Apasionado por las matemáticas y la enseñanza</span>
+                    <p class="text-gray-700 mb-4 text-lg">
+                        Más de 10 años guiando a estudiantes de todos los niveles a descubrir que <span class="font-semibold text-blue-800">sí pueden entender matemáticas</span>. Trabajo online y con tecnología moderna para adaptarme a tu ritmo y tus metas.
+                    </p>
+                    <p class="text-gray-700 text-lg">
+                        ¿Te cuesta un tema? ¿No te salen los ejercicios? No hay problema: juntos lo desmenuzamos, paso a paso. El objetivo es que <span class="font-bold text-blue-700">entiendas el porqué</span> de cada concepto y ganes la confianza que necesitas.
+                    </p>
+                </div>
+            </div>
+                    <section id="niveles" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700">¿A quiénes enseño?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Brindo asesoría personalizada en matemáticas para estudiantes de todos los niveles académicos.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-blue-50 rounded-xl shadow-md p-8 flex flex-col items-center">
+                        <div class="text-4xl mb-4 text-blue-600">📚</div>
+                        <h3 class="font-semibold text-xl mb-2 text-blue-800">Primaria (6° grado)</h3>
+                        <p class="text-gray-600 text-center">Refuerzo de bases matemáticas, resolución de problemas y preparación para secundaria.</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl shadow-md p-8 flex flex-col items-center">
+                        <div class="text-4xl mb-4 text-blue-600">🏫</div>
+                        <h3 class="font-semibold text-xl mb-2 text-blue-800">Secundaria</h3>
+                        <p class="text-gray-600 text-center">Aritmética, Álgebra, Geometría, Trigonometría y preparación para exámenes escolares.</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl shadow-md p-8 flex flex-col items-center">
+                        <div class="text-4xl mb-4 text-blue-600">🎓</div>
+                        <h3 class="font-semibold text-xl mb-2 text-blue-800">Bachillerato</h3>
+                        <p class="text-gray-600 text-center">Preparación para exámenes de admisión, nivelación y apoyo en cursos avanzados.</p>
+                    </div>
+                    <div class="bg-blue-50 rounded-xl shadow-md p-8 flex flex-col items-center">
+                        <div class="text-4xl mb-4 text-blue-600">🏛️</div>
+                        <h3 class="font-semibold text-xl mb-2 text-blue-800">Universitarios</h3>
+                        <p class="text-gray-600 text-center">Cálculo, Álgebra lineal, Estadística y asesoría en cursos universitarios de matemáticas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+        
+        <section id="metodologia" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700">Mi Metodología de Enseñanza</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Un enfoque moderno, práctico y cercano. Aprenderás de verdad, no solo a memorizar.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl mb-4 text-blue-600">🎓</div>
+                        <h3 class="font-semibold text-xl mb-2">Clases 100% Personalizadas</h3>
+                        <p class="text-gray-600">Nos enfocamos en tus dudas específicas y avanzamos a tu ritmo.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl mb-4 text-blue-600">💻</div>
+                        <h3 class="font-semibold text-xl mb-2">Tecnología Interactiva</h3>
+                        <p class="text-gray-600">Pizarras digitales, GeoGebra y recursos visuales para que entiendas mejor.</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl mb-4 text-blue-600">💡</div>
+                        <h3 class="font-semibold text-xl mb-2">Comprensión Total</h3>
+                        <p class="text-gray-600">Te enseño a razonar, no solo a resolver. ¡Pierde el miedo a los exámenes!</p>
+                    </div>
+                    <div class="text-center p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                        <div class="text-4xl mb-4 text-blue-600">💬</div>
+                        <h3 class="font-semibold text-xl mb-2">Comunicación Directa</h3>
+                        <p class="text-gray-600">Soporte por WhatsApp para dudas rápidas y seguimiento personalizado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="servicios" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700">Planes de Asesoría</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Elige el plan que más se adapte a tus metas académicas.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+        <h3 class="text-2xl font-bold text-blue-700 mb-2">Clase Individual</h3>
+        <p class="text-gray-500 mb-6">Perfecta para resolver dudas puntuales o reforzar temas específicos.</p>
+        <p class="text-5xl font-extrabold text-gray-800 mb-6">S/ 55 <span class="text-lg font-medium text-gray-500">/hora</span></p>
+        <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Sesión de 60 minutos en vivo</li>
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Material digital incluido</li>
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Flexibilidad de horario</li>
+        </ul>
+        <a href="#contacto" class="w-full text-center bg-blue-100 text-blue-800 font-semibold py-3 rounded-lg hover:bg-blue-200 transition-colors">Agendar Clase</a>
+    </div>
+    <div class="bg-blue-700 text-white rounded-xl shadow-2xl p-8 flex flex-col transform scale-105 relative">
+        <div class="absolute top-0 right-8 -mt-4 bg-yellow-400 text-yellow-800 text-sm font-bold px-3 py-1 rounded-full">MÁS POPULAR</div>
+        <h3 class="text-2xl font-bold mb-2">Paquete Mensual</h3>
+        <p class="text-blue-200 mb-6">3 clases de 60 minutos cada una durante el mes. ¡Mi plan más recomendado!</p>
+        <p class="text-5xl font-extrabold mb-6">S/ 150 <span class="text-lg font-medium text-blue-200">/mes</span></p>
+        <ul class="space-y-3 text-blue-100 mb-8 flex-grow">
+            <li class="flex items-center"><span class="text-green-300 mr-2">✔</span> 3 clases de 60 minutos</li>
+            <li class="flex items-center"><span class="text-green-300 mr-2">✔</span> Soporte por WhatsApp entre clases</li>
+            <li class="flex items-center"><span class="text-green-300 mr-2">✔</span> Ejercicios y resúmenes</li>
+            <li class="flex items-center"><span class="text-green-300 mr-2">✔</span> Seguimiento y motivación</li>
+        </ul>
+        <a href="#contacto" class="w-full text-center bg-white text-blue-800 font-semibold py-3 rounded-lg hover:bg-gray-200 transition-colors">Elegir Paquete</a>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col">
+        <h3 class="text-2xl font-bold text-blue-700 mb-2">Preparación Examen</h3>
+        <p class="text-gray-500 mb-6">Entrena intensamente para rendir al máximo en tu examen.</p>
+        <p class="text-5xl font-extrabold text-gray-800 mb-6">S/ 300 <span class="text-lg font-medium text-gray-500">/plan</span></p>
+        <ul class="space-y-3 text-gray-600 mb-8 flex-grow">
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> 6 clases de 60 minutos</li>
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Simulacros, balotarios y tips de examen</li>
+            <li class="flex items-center"><span class="text-green-500 mr-2">✔</span> Acompañamiento personalizado</li>
+        </ul>
+        <a href="#contacto" class="w-full text-center bg-blue-100 text-blue-800 font-semibold py-3 rounded-lg hover:bg-blue-200 transition-colors">Prepararme ahora</a>
+    </div>
+</div>
+<!-- ...resto del código... -->
+            </div>
+        </section>
+
+        <div class="text-center my-12">
+          <a href="#contacto" class="bg-yellow-500 text-gray-800 px-8 py-3 rounded-full text-lg font-bold shadow-lg hover:bg-yellow-600 transition">Reserva tu clase de prueba ¡Es gratis!</a>
+        </div>
+
+        <section id="testimonios" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700">Lo que dicen mis estudiantes</h2>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <p class="text-gray-600 mb-6">"Antes odiaba las matemáticas, pero con Miguel todo se hizo más fácil de entender. Subí mis notas. 100% recomendado."</p>
+                        <div class="font-bold text-gray-800">Lucía M.</div>
+                        <div class="text-sm text-gray-500">Estudiante de 4to de Secundaria</div>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <p class="text-gray-600 mb-6">"La paciencia y la metodología que usa el profesor son increíbles. Mi hijo no solo mejoró sus calificaciones, sino que también ganó muchísima confianza en sí mismo. Excelente inversión."</p>
+                        <div class="font-bold text-gray-800">Carlos R.</div>
+                        <div class="text-sm text-gray-500">Padre de Familia</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-20">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-700">Preguntas Frecuentes</h2>
+                </div>
+                <div class="space-y-4">
+                    <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="accordion-button w-full text-left p-5 font-medium text-gray-800 text-lg hover:bg-gray-50 transition-colors flex justify-between items-center">
+                            ¿Para qué niveles y cursos enseñas?
+                            <span class="text-blue-600 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="accordion-content px-5 pb-5 text-gray-600">
+                            <p>Asesoro estudiantes de primaria (desde 4to grado) y secundaria en Aritmética, Álgebra, Geometría y Trigonometría. También preparo para exámenes de admisión universitarios y escolares.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="accordion-button w-full text-left p-5 font-medium text-gray-800 text-lg hover:bg-gray-50 transition-colors flex justify-between items-center">
+                            ¿Qué herramientas necesito para las clases?
+                            <span class="text-blue-600 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="accordion-content px-5 pb-5 text-gray-600">
+                            <p>Solo necesitas una computadora o tablet con conexión a internet estable, micrófono y audífonos (o usar los de tu dispositivo). Las clases se realizan por Google Meet o Zoom, y utilizaremos una pizarra digital interactiva muy fácil de usar. ¡No necesitas instalar nada complicado!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="accordion-button w-full text-left p-5 font-medium text-gray-800 text-lg hover:bg-gray-50 transition-colors flex justify-between items-center">
+                            ¿Cómo agendo y pago las clases?
+                            <span class="text-blue-600 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="accordion-content px-5 pb-5 text-gray-600">
+                            <p>Primero, contáctame a través de WhatsApp, Telegram o por el formulario para coordinar la clase de prueba gratuita. Luego, las clases se agendan semanalmente según disponibilidad. Acepto pagos por transferencia bancaria, Yape o Plin. El pago se realiza antes de iniciar la clase o el paquete mensual.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item bg-white rounded-xl shadow-lg overflow-hidden">
+                        <button class="accordion-button w-full text-left p-5 font-medium text-gray-800 text-lg hover:bg-gray-50 transition-colors flex justify-between items-center">
+                            ¿Cuál es la política de cancelación?
+                            <span class="text-blue-600 transform transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="accordion-content px-5 pb-5 text-gray-600">
+                            <p>Entiendo que pueden surgir imprevistos. Puedes reprogramar o cancelar una clase sin costo avisando con al menos 24 horas de anticipación. En caso de cancelaciones con menos tiempo o ausencias no notificadas, se conversará cada caso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-20 bg-blue-700 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">¡Empecemos a resolverlo juntos!</h2>
+                    <p class="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">Envía un mensaje para agendar tu clase de prueba gratuita o para resolver cualquier otra duda. ¡Te responderé lo antes posible!</p>
+                </div>
+                <div class="max-w-xl mx-auto bg-white text-gray-800 rounded-xl shadow-2xl p-8">
+                    <!-- Reemplaza la URL del src por la tuya real de Google Forms -->
+                    <iframe src="https://forms.gle/abcd1234EjemploReal" width="100%" height="740" frameborder="0" marginheight="0" marginwidth="0" title="Formulario de contacto MateXperto">Cargando…</iframe>
+                </div>
+                <div class="text-center mt-12 text-blue-200">
+                    <p class="text-xl mb-3">O contáctame directamente:</p>
+                    <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                        <a href="https://wa.me/51941502681?text=Hola%20Miguel%2C%20estoy%20interesado%20en%20tus%20clases%20de%20MateXperto." target="_blank" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01s-.521.074-.792.372c-.272.296-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            WhatsApp
+                        </a>
+                        <a href="mailto:miguel@matexperto.com" class="inline-flex items-center justify-center bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884zM18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POLÍTICA DE PRIVACIDAD -->
+        <section id="privacidad" class="py-16 bg-gray-100 text-gray-700">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Política de Privacidad</h2>
+                <p class="mb-2">En <span class="font-semibold text-blue-700">MateXperto</span> valoramos tu privacidad y protegemos tus datos. La información que nos brindes (nombre, correo, teléfono, mensaje) solo será utilizada para responder a tus consultas, agendar clases o enviarte información relevante sobre mis servicios de asesoría matemática.</p>
+                <p class="mb-2">No compartimos, vendemos ni transferimos tus datos a terceros. Tus datos se almacenan de forma segura y solo por el tiempo necesario para la atención de tu caso. Puedes solicitar la eliminación de tus datos en cualquier momento escribiéndome a <a href="mailto:profesor@matexperto.com" class="text-blue-600 underline">profesor@matexperto.com</a>.</p>
+                <p>Si tienes preguntas sobre tu privacidad, escríbeme con confianza. Tu seguridad y confianza son muy importantes para mí.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-8">
+    <div class="container mx-auto px-6 text-center">
+        <p>&copy; <span id="currentYear"></span> Miguel Caballero | MateXperto - Asesorías de Matemáticas Online. Todos los derechos reservados.</p>
+        <p class="text-sm mt-2">Diseñado en <span class="font-semibold">Lima</span>, <span class="font-semibold">Perú</span>.</p>
+        <div class="mt-4">
+            <a href="https://www.facebook.com/MateXperto" class="inline-block mx-2 hover:text-blue-400 transition-colors" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/matexperto?igsh=anFmOGZpMHhmMHds" class="inline-block mx-2 hover:text-pink-400 transition-colors" target="_blank">Instagram</a>
+            <a href="#privacidad" class="inline-block mx-2 hover:text-green-400 transition-colors">Política de Privacidad</a>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('span');
+                    const isCurrentlyOpen = content.style.maxHeight;
+
+                    accordionButtons.forEach(otherButton => {
+                        const otherContent = otherButton.nextElementSibling;
+                        const otherIcon = otherButton.querySelector('span');
+                        if (otherContent.style.maxHeight && otherButton !== button) {
+                           otherContent.style.maxHeight = null;
+                           otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    });
+
+                    if (!isCurrentlyOpen) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.style.maxHeight = null;
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+
+            const sections = document.querySelectorAll('main section');
+            const navLinks = document.querySelectorAll('header .nav-link');
+            
+            const onScroll = () => {
+                let currentSectionId = 'inicio'; 
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 100) {
+                        currentSectionId = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', onScroll);
+            onScroll(); 
+
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
